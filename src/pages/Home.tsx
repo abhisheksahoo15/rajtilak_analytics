@@ -71,10 +71,10 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
               
               <ScrollReveal direction="left" delay={300}>
                 <div className="p-4 bg-white border border-[#071A3D]/5 rounded-2xl shadow-sm flex items-center gap-4 mt-2 hover-card">
-                  <span className="text-3xl font-display font-black text-saffron-start animate-glow-pulse">98.4%</span>
+                  <span className="text-3xl font-display font-black text-saffron-start animate-glow-pulse">95%+</span>
                   <div className="flex flex-col">
-                    <span className="text-xs font-bold text-[#071A3D]">Predictive Precision</span>
-                    <span className="text-[10px] text-[#071A3D]/50 font-mono font-bold uppercase">PROVEN OVER 48 CAMPAIGNS</span>
+                    <span className="text-xs font-bold text-[#071A3D]">Client Satisfaction</span>
+                    <span className="text-[10px] text-[#071A3D]/50 font-mono font-bold uppercase">ACROSS ALL ENGAGEMENTS</span>
                   </div>
                 </div>
               </ScrollReveal>
@@ -245,7 +245,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
             {/* Right Col - Core Strengths Grid */}
             <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
-                { title: '98.4% Predictive Precision', desc: 'Proven victory calibration models deployed across 48 state and parliamentary campaigns.', icon: <LineChart className="w-5 h-5 text-saffron-start" /> },
+                { title: 'Data-Driven Accuracy', desc: 'Our predictive models are validated against actual outcomes, delivering reliable campaign intelligence.', icon: <LineChart className="w-5 h-5 text-saffron-start" /> },
                 { title: 'GetSetAI Proprietary Core', desc: 'Configured with custom regional NLP dictionaries mapping regional slangs and dialogues.', icon: <Zap className="w-5 h-5 text-saffron-end" /> },
                 { title: 'Absolute Leak-Proof Isolation', desc: 'Zero data exposure via fully encrypted sandboxed systems and private server hosts.', icon: <Lock className="w-5 h-5 text-[#00E5FF]" /> },
                 { title: 'Rapid 24h Message Adjustment', desc: 'Adjust public speech hooks and micro-campaign angles within 24 hours of narrative shifts.', icon: <RefreshCw className="w-5 h-5 text-gold-accent" /> },

@@ -80,7 +80,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <Logo lightText={true} size="lg" />
             </button>
             <p className="font-sans text-xs text-white/50 leading-relaxed max-w-sm">
-              Rajtilak Analytics is India's leading election war room consultancy, integrating political intelligence, predictive voter analysis, and civilizational pride to design victory.
+              Rajtilak Analytics is India's leading political strategy management and election campaign consulting firm, providing data-driven voter analytics, sentiment analysis, and campaign intelligence services.
             </p>
             {/* Custom SVG Social Icons */}
             <div className="flex gap-4">
@@ -141,7 +141,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-saffron-start font-black font-mono">Mail:</span>
-                <a href="mailto:strategy@rajtilakanalytics.in" className="hover:text-saffron-start transition-colors font-mono">strategy@rajtilakanalytics.in</a>
+                <a href="mailto:strategy.rajtilak@gmail.com" className="hover:text-saffron-start transition-colors font-mono">strategy.rajtilak@gmail.com</a>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-saffron-end font-black font-mono mt-0.5">Call:</span>

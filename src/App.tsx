@@ -17,6 +17,7 @@ import { ContactPage } from './pages/ContactPage';
 import { TrendsPage } from './pages/TrendsPage';
 import { BlogHubPage } from './pages/BlogHubPage';
 import { ReportsPage } from './pages/ReportsPage';
+import { SeoAboutPage } from './pages/SeoAboutPage';
 import { TalkWithNetaji } from './components/TalkWithNetaji';
 
 function App() {
@@ -117,6 +118,7 @@ function App() {
           {currentPage === 'blogs' && <BlogHubPage />}
           {currentPage === 'reports' && <ReportsPage />}
           {currentPage === 'contact' && <ContactPage />}
+          {currentPage === 'political-strategy' && <SeoAboutPage />}
         </main>
 
         {/* 3. Footer (Dotted India map & Centerpiece) */}

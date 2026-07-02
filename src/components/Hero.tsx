@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { ScrollReveal } from './ScrollReveal';
 import { AnimatedButton } from './AnimatedButton';
-import { 
-  BarChart3, Shield, Users, Brain, Target, Vote, 
-  TrendingUp, Zap, Globe, Crown, MapPin, Radio 
+import {
+  BarChart3, Shield, Users, Brain, Target, Vote,
+  TrendingUp, Zap, Globe, Crown, MapPin, Radio
 } from 'lucide-react';
 
 interface HeroProps {
@@ -50,10 +50,10 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   }, []);
 
   const stats = [
-    { label: 'Voters Tracked', value: '850M+', color: '#071A3D' },
-    { label: 'Prediction Accuracy', value: '98.4%', color: '#FF6A00' },
-    { label: 'Constituencies', value: '543/543', color: '#071A3D' },
-    { label: 'Win Rate', value: '100%', color: '#C5A059' },
+    { label: 'Campaigns Analyzed', value: '35+', color: '#071A3D' },
+    { label: 'Data Points Processed', value: '10K+', color: '#FF6A00' },
+    { label: 'Constituencies Modeled', value: '13+', color: '#071A3D' },
+    { label: 'Leaders Advised', value: '20+', color: '#C5A059' },
   ];
 
   // Floating icon badges configuration
@@ -89,9 +89,9 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       {/* ═══════════════════════════════════════════
           ANIMATED BACKGROUND LAYER
           ═══════════════════════════════════════════ */}
-      
+
       {/* Interactive gradient orb following cursor */}
-      <div 
+      <div
         className="absolute w-[800px] h-[800px] rounded-full pointer-events-none transition-all duration-[3000ms] ease-out opacity-60"
         style={{
           left: `${mousePos.x}%`,
@@ -105,7 +105,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       {/* Animated gradient mesh blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Top-left warm blob */}
-        <div 
+        <div
           className="absolute -top-20 -left-20 w-[500px] h-[500px] opacity-30 animate-morph-blob"
           style={{
             background: 'radial-gradient(ellipse, rgba(255,106,0,0.12) 0%, transparent 70%)',
@@ -113,7 +113,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           }}
         />
         {/* Bottom-right navy blob */}
-        <div 
+        <div
           className="absolute -bottom-20 -right-20 w-[600px] h-[600px] opacity-20 animate-morph-blob"
           style={{
             background: 'radial-gradient(ellipse, rgba(7,26,61,0.08) 0%, transparent 70%)',
@@ -123,7 +123,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           }}
         />
         {/* Center gold accent */}
-        <div 
+        <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] opacity-15 animate-breathe"
           style={{
             background: 'radial-gradient(circle, rgba(197,160,89,0.15) 0%, transparent 60%)',
@@ -137,7 +137,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           <div className="absolute inset-[80px] border border-saffron-start/[0.04] rounded-full animate-spin-slow" style={{ animationDirection: 'reverse', animationDuration: '35s' }} />
           <div className="absolute inset-[180px] border border-[#C5A059]/[0.04] rounded-full animate-spin-slow" style={{ animationDuration: '45s' }} />
           <div className="absolute inset-[280px] border border-[#071A3D]/[0.02] rounded-full animate-spin-slow" style={{ animationDirection: 'reverse', animationDuration: '55s' }} />
-          
+
           {/* Orbiting dots on rings */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-saffron-start/30 animate-spin-slow" style={{ transformOrigin: '50% 450px' }} />
           <div className="absolute top-[80px] left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#071A3D]/20 animate-spin-slow" style={{ animationDirection: 'reverse', animationDuration: '35s', transformOrigin: '50% 370px' }} />
@@ -158,10 +158,10 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
         <svg className="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
           {connectionNodes.map((node, i) => (
             <g key={i}>
-              <line 
+              <line
                 x1={node.x1} y1={node.y1} x2={node.x2} y2={node.y2}
-                stroke="url(#lineGrad)" 
-                strokeWidth="1" 
+                stroke="url(#lineGrad)"
+                strokeWidth="1"
                 opacity="0.08"
                 strokeDasharray="4 6"
               >
@@ -204,7 +204,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               animationDuration: `${5 + i * 0.8}s`,
             }}
           >
-            <div 
+            <div
               className="rotate-45 opacity-15"
               style={{ width: item.size, height: item.size, background: item.color, borderRadius: '1.5px' }}
             />
@@ -235,7 +235,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
             transition: `all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) ${800 + i * 100}ms`,
           }}
         >
-          <div 
+          <div
             className="p-2.5 rounded-xl shadow-sm backdrop-blur-sm border border-white/40"
             style={{ background: bg }}
           >
@@ -251,9 +251,9 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           MAIN CONTENT
           ═══════════════════════════════════════════ */}
       <div className="relative z-20 max-w-7xl mx-auto px-6 text-center flex flex-col items-center">
-        
+
         {/* Top Badge */}
-        <div 
+        <div
           className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full text-[11px] uppercase tracking-[0.2em] font-bold text-saffron-end mb-10 border border-saffron-start/20 bg-white/70 backdrop-blur-sm shadow-[0_2px_12px_rgba(255,106,0,0.06)]"
           style={{
             opacity: heroReady ? 1 : 0,
@@ -277,15 +277,15 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           >
             We Build
           </span>{' '}
-          
+
           {/* Rotating Word */}
           <span className="relative inline-block min-w-[200px] sm:min-w-[280px] md:min-w-[380px] text-left">
             <span
               className="text-saffron-gradient inline-block"
               style={{
                 opacity: isWordVisible && heroReady ? 1 : 0,
-                transform: isWordVisible && heroReady 
-                  ? 'translateY(0) rotateX(0deg)' 
+                transform: isWordVisible && heroReady
+                  ? 'translateY(0) rotateX(0deg)'
                   : 'translateY(20px) rotateX(-40deg)',
                 transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
                 transformOrigin: 'bottom center',
@@ -293,12 +293,12 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
             >
               {ROTATING_WORDS[currentWordIndex]}
             </span>
-            <span 
+            <span
               className="inline-block w-[4px] h-[0.85em] bg-saffron-start/60 ml-1 align-baseline rounded-sm"
               style={{ animation: 'blinkCaret 1s step-end infinite' }}
             />
           </span>
-          
+
           <br />
           <span
             style={{
@@ -313,7 +313,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
         </h1>
 
         {/* Punchy subtitle */}
-        <p 
+        <p
           className="font-sans text-base sm:text-lg text-[#071A3D]/50 max-w-xl leading-relaxed mb-8 font-medium"
           style={{
             opacity: heroReady ? 1 : 0,
@@ -326,7 +326,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
         </p>
 
         {/* Floating feature pills between subtitle and buttons */}
-        <div 
+        <div
           className="flex flex-wrap justify-center gap-2.5 mb-10"
           style={{
             opacity: heroReady ? 1 : 0,
@@ -344,7 +344,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
             <div
               key={i}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-[#071A3D]/5 text-[10px] font-display font-bold uppercase tracking-wider text-[#071A3D]/60 shadow-[0_1px_4px_rgba(7,26,61,0.04)] hover:border-saffron-start/30 hover:shadow-[0_4px_12px_rgba(255,106,0,0.08)] hover:text-[#071A3D] transition-all duration-300 cursor-default"
-              style={{ 
+              style={{
                 animationDelay: `${i * 100 + 900}ms`,
                 color: pill.color,
               }}
@@ -356,7 +356,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
         </div>
 
         {/* CTA Buttons */}
-        <div 
+        <div
           className="flex flex-col sm:flex-row gap-5 items-center"
           style={{
             opacity: heroReady ? 1 : 0,
@@ -403,16 +403,16 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 {stats.map((stat, i) => (
                   <div key={stat.label} className="flex flex-col gap-1.5 group cursor-default">
                     <span className="text-[10px] text-[#071A3D]/35 uppercase font-display tracking-widest font-bold">{stat.label}</span>
-                    <span 
-                      className="font-display text-2xl sm:text-3xl font-black transition-all duration-300 group-hover:scale-105 group-hover:translate-x-1" 
+                    <span
+                      className="font-display text-2xl sm:text-3xl font-black transition-all duration-300 group-hover:scale-105 group-hover:translate-x-1"
                       style={{ color: stat.color }}
                     >
                       {stat.value}
                     </span>
                     <div className="w-full h-[2px] bg-[#071A3D]/5 rounded-full overflow-hidden mt-1">
-                      <div 
+                      <div
                         className="h-full rounded-full transition-all duration-1000 ease-out"
-                        style={{ 
+                        style={{
                           width: heroReady ? '100%' : '0%',
                           background: `linear-gradient(90deg, ${stat.color}, ${stat.color}80)`,
                           transitionDelay: `${1200 + i * 200}ms`,
@@ -426,12 +426,12 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               {/* Bottom trust bar */}
               <div className="flex flex-wrap items-center justify-center gap-4 mt-6 pt-5 border-t border-[#071A3D]/5">
                 {[
-                  { icon: <Shield size={12} />, text: 'Military-Grade Encryption' },
-                  { icon: <Globe size={12} />, text: '28 States Covered' },
-                  { icon: <Users size={12} />, text: '200+ Campaigns Won' },
+                  { icon: <Shield size={12} />, text: 'End-to-End Encrypted Operations' },
+                  { icon: <Globe size={12} />, text: 'Pan-India Advisory Capability' },
+                  { icon: <Users size={12} />, text: 'Dedicated Campaign War Rooms' },
                 ].map((trust, i) => (
-                  <div 
-                    key={i} 
+                  <div
+                    key={i}
                     className="flex items-center gap-1.5 text-[9px] font-display font-bold uppercase tracking-widest text-[#071A3D]/30"
                   >
                     <span className="text-saffron-start/50">{trust.icon}</span>

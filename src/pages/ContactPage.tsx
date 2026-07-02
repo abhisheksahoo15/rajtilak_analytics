@@ -21,8 +21,8 @@ export const ContactPage: React.FC = () => {
       icon: <Mail className="w-5 h-5 text-saffron-end" />, 
       title: 'Direct Strategic Mail', 
       info: (
-        <a href="mailto:strategy@rajtilakanalytics.in" className="hover:text-saffron-start transition-colors font-mono">
-          strategy@rajtilakanalytics.in
+        <a href="mailto:strategy.rajtilak@gmail.com" className="hover:text-saffron-start transition-colors font-mono">
+          strategy.rajtilak@gmail.com
         </a>
       ), 
       tag: 'SECURE ENCRYPTED INBOX' 
